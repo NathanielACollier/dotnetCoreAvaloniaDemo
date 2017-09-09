@@ -1,0 +1,13 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:local="clr-namespace:dotnetCoreAvaloniaDemo.views.pages;assembly=dotnetCoreAvaloniaDemo"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        <DockPanel>
+
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
+                        <TextBlock Text="Message: " />
+                        <TextBox Text="{Binding Path=Message, Mode=TwoWay}" />
+                </StackPanel>
+
+                <TextBlock DockPanel.Dock="Bottom" Text="{Binding Path=Message}"></TextBlock>
+        </DockPanel>
+</UserControl>

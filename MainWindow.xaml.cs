@@ -9,9 +9,6 @@ namespace dotnetCoreAvaloniaDemo{
         {
             AvaloniaXamlLoader.Load(this);
             this.AttachDevTools();
-
-            var model = this.DataContext as Models.Main;
-            model.Message = "Hello World from MVVM!!";
         }
     }
 }

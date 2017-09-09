@@ -1,19 +1,8 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:local="clr-namespace:dotnetCoreAvaloniaDemo;assembly=dotnetCoreAvaloniaDemo"
-        xmlns:localModels="clr-namespace:dotnetCoreAvaloniaDemo.Models;assembly=dotnetCoreAvaloniaDemo"
+        xmlns:views="clr-namespace:dotnetCoreAvaloniaDemo.views;assembly=dotnetCoreAvaloniaDemo"
         MinWidth="500"
         MinHeight="300"
         Title="Avalonia Template">
-    <Window.DataContext>
-        <localModels:Main />
-    </Window.DataContext>
-    <DockPanel>
-
-        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
-            <TextBlock Text="Message: " />
-            <TextBox Text="{Binding Path=Message, Mode=TwoWay}" />
-        </StackPanel>
-
-        <TextBlock DockPanel.Dock="Bottom" Text="{Binding Path=Message}"></TextBlock>
-    </DockPanel>
+    <views:Main />
 </Window>
