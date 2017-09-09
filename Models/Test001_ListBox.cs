@@ -1,3 +1,4 @@
+using System.Collections.ObjectModel;
 using ViewModelBase;
 
 namespace dotnetCoreAvaloniaDemo.Models
@@ -7,6 +8,11 @@ namespace dotnetCoreAvaloniaDemo.Models
         public string Message {
             get { return this.GetValue(() => this.Message); }
             set { this.SetValue(() => this.Message, value);}
+        }
+
+        public ObservableCollection<string> Items {
+            get { return this.GetValue(() => this.Items);}
+            set { this.SetValue(() => this.Items, value); }
         }
     }    
 }

@@ -1,5 +1,6 @@
 using Avalonia;
 using Avalonia.Controls;
+using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 
 namespace dotnetCoreAvaloniaDemo.views.pages{
@@ -12,6 +13,12 @@ namespace dotnetCoreAvaloniaDemo.views.pages{
 
             var model = this.DataContext as Models.Test001_Listbox;
             model.Message = "Hello World from MVVM!!";
+        }
+
+        private void AddMessageButton_Clicked(object sender, RoutedEventArgs args ){
+            var model = this.DataContext as Models.Test001_Listbox;
+
+            model.Items.Add(model.Message);
         }
 
     }
