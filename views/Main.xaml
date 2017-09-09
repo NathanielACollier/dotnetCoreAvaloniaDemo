@@ -1,7 +1,7 @@
 <UserControl xmlns="https://github.com/avaloniaui"
         xmlns:pages="clr-namespace:dotnetCoreAvaloniaDemo.views.pages;assembly=dotnetCoreAvaloniaDemo"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <TabControl Classes="sidebar">
+    <TabControl>
         <TabControl.Transition>
             <CrossFade Duration="0.25"/>
         </TabControl.Transition>
