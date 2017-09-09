@@ -7,7 +7,7 @@
                 <StackPanel Orientation="Horizontal" DockPanel.Dock="Top">
                         <TextBlock Text="Message: " />
                         <TextBox Text="{Binding Path=Message, Mode=TwoWay}" />
-                        <Button Content="Add" Click="AddMessageButton_Clicked" />
+                        <Button Content="Add" Name="addMessageButton" />
                 </StackPanel>
 
                 <TextBlock DockPanel.Dock="Top" Text="{Binding Path=Message}"></TextBlock>
