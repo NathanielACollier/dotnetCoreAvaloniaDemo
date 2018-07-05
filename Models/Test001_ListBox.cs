@@ -13,5 +13,11 @@ namespace dotnetCoreAvaloniaDemo.Models
         public ObservableCollection<string> Items {
             get { return this.GetValue(() => this.Items);}
         }
+
+
+        public void AddMessage(){
+            this.Items.Add(this.Message);
+            this.Message = "";
+        }
     }    
 }

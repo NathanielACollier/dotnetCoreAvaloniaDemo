@@ -13,15 +13,6 @@ namespace dotnetCoreAvaloniaDemo.views.pages{
 
             var model = this.DataContext as Models.Test001_Listbox;
             model.Message = "Hello World from MVVM!!";
-
-            var addMessageButton = this.FindControl<Button>("addMessageButton");
-            addMessageButton.Click += AddMessageButton_Clicked;
-        }
-
-        private void AddMessageButton_Clicked(object sender, RoutedEventArgs args ){
-            var model = this.DataContext as Models.Test001_Listbox;
-
-            model.Items.Add(model.Message);
         }
 
     }
