@@ -2,9 +2,9 @@
         xmlns:pages="clr-namespace:dotnetCoreAvaloniaDemo.views.pages;assembly=dotnetCoreAvaloniaDemo"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <TabControl>
-        <TabControl.Transition>
+        <TabControl.PageTransition>
             <CrossFade Duration="0.25"/>
-        </TabControl.Transition>
+        </TabControl.PageTransition>
         <TabItem Header="Test 001 - ListBox"><pages:Test001_Listbox/></TabItem>
         <TabItem Header="Test 002 - Images"><pages:Test002_Images /></TabItem>
     </TabControl>
