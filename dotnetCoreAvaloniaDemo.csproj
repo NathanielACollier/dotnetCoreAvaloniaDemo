@@ -14,4 +14,9 @@
     <PackageReference Include="ViewModelBase" Version="1.0.5" />
   </ItemGroup>
 
+  <!-- Images -->
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\sun.jpg" />
+  </ItemGroup>
+
 </Project>

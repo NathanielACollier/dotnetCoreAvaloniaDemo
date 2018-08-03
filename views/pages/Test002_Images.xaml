@@ -1,0 +1,12 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:local="clr-namespace:dotnetCoreAvaloniaDemo.views.pages;assembly=dotnetCoreAvaloniaDemo"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        <DockPanel>
+
+               <DockPanel DockPanel.Dock="Top">
+                    <TextBlock DockPanel.Dock="Left">Picture 1</TextBlock>
+                    <Image Source="resm:dotnetCoreAvaloniaDemo.Assets.sun.jpg" Width="200" Height="200" Stretch="Fill" />
+               </DockPanel>
+        </DockPanel>
+</UserControl>
