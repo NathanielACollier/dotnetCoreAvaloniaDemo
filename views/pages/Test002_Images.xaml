@@ -8,5 +8,9 @@
                     <TextBlock DockPanel.Dock="Left">Picture 1</TextBlock>
                     <Image Source="resm:dotnetCoreAvaloniaDemo.Assets.sun.jpg" Width="200" Height="200" Stretch="Fill" />
                </DockPanel>
+               <DockPanel DockPanel.Dock="Top">
+                    <TextBlock DockPanel.Dock="Left">Spinning Circle</TextBlock>
+                    <Image Source="resm:dotnetCoreAvaloniaDemo.Assets.spinningCircle.gif" Width="200" Height="200" Stretch="Fill" />
+               </DockPanel>
         </DockPanel>
 </UserControl>

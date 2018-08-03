@@ -17,6 +17,7 @@
   <!-- Images -->
   <ItemGroup>
     <EmbeddedResource Include="Assets\sun.jpg" />
+    <EmbeddedResource Include="Assets\spinningCircle.gif" />
   </ItemGroup>
 
 </Project>
