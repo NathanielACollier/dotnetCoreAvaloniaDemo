@@ -6,6 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="**\*.xaml" Subtype="Designer" Exclude="obj\**" />
+    <Compile Update="**\*.xaml.cs" SubType="Code" DependentUpon="%(Filename)" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Avalonia.Desktop" Version="0.8.1" />
   </ItemGroup>
 </Project>
