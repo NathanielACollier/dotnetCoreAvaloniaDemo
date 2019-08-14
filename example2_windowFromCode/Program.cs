@@ -1,5 +1,6 @@
 ﻿using System;
 using Avalonia;
+using Avalonia.Logging.Serilog;
 
 namespace example2_windowFromCode
 {
@@ -7,10 +8,12 @@ namespace example2_windowFromCode
     {
         static void Main(string[] args)
         {
-            var app = new Application();
-            AppBuilder.Configure(app)
+            var app = AppBuilder.Configure<App>()
+                .LogToDebug(Avalonia.Logging.LogEventLevel.Verbose)
                 .UsePlatformDetect()
-                .SetupWithoutStarting();
+                .SetupWithoutStarting()
+                .Instance;
+                
 
             var win = new Avalonia.Controls.Window();
             var tb = new Avalonia.Controls.TextBlock
@@ -18,6 +21,7 @@ namespace example2_windowFromCode
                 Text = "Hello World!"
             };
             win.Content = tb;
+            win.Show();
             app.Run(win);
         }
     }
