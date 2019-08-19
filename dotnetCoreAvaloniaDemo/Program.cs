@@ -1,5 +1,6 @@
 ﻿using System;
 using Avalonia;
+using Avalonia.Logging.Serilog;
 
 namespace dotnetCoreAvaloniaDemo
 {
@@ -8,6 +9,7 @@ namespace dotnetCoreAvaloniaDemo
         static void Main(string[] args)
         {
             AppBuilder.Configure<App>()
+                //.LogToDebug(Avalonia.Logging.LogEventLevel.Verbose)
                 .UsePlatformDetect()
                 .Start<MainWindow>();
         }
